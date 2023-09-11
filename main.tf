@@ -17,7 +17,7 @@ resource "random_pet" "test" {
 }
 
 resource "random_password" "name" {
-  count = 5
+  count = 2
   length = 6
   keepers = {
     long = var.long_var_1
