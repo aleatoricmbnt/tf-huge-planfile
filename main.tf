@@ -1,5 +1,5 @@
 resource "null_resource" "some" {
-  count = 4
+  count = 8
   triggers = {
     long = var.long_var_1
     # another_long = var.long_var_2
@@ -8,7 +8,7 @@ resource "null_resource" "some" {
 }
 
 resource "random_pet" "test" {
-  count = 4
+  count = 8
   keepers = {
     long = var.long_var_1
     # another_long = var.long_var_2
@@ -27,7 +27,7 @@ resource "random_password" "name" {
 }
 
 # resource "random_string" "random" {
-#   count = 40000
+#   count = 80000
 
 #   length           = 6
 #   special          = true
